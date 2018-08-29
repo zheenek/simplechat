@@ -2,10 +2,11 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var address = "https://zheenek.github.io/simplechat/";
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
+app.get(address, function(req, res) {
     res.sendFile(__dirname + '/');
 });
 
