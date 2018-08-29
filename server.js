@@ -23,6 +23,6 @@ io.on('connection', function(socket) {
     //console.log('User' + user + ' connected');
 });
 
-http.listen(3000, function() {
+http.listen(port, "0.0.0.0", function() {
     console.log("Launching server...");
 });
