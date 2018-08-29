@@ -23,6 +23,6 @@ io.on('connection', function(socket) {
     //console.log('User' + user + ' connected');
 });
 
-http.listen(port, "0.0.0.0", function() {
+http.listen(https://zheenek.github.io/simplechat/, function() {
     console.log("Launching server...");
 });
