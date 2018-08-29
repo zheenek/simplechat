@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-var address = https://zheenek.github.io/simplechat/;
+var https = require('https').Server(app);
+var io = require('socket.io')(https);
+var address = "https://zheenek.github.io/simplechat/";
 
 app.use(express.static('public'));
 
-app.get(address.toString(), function(req, res) {
+app.get(address, function(req, res) {
     res.sendFile(__dirname + '/');
 });
 
@@ -24,6 +24,6 @@ io.on('connection', function(socket) {
     //console.log('User' + user + ' connected');
 });
 
-http.listen(address, function() {
+https.listen(https://zheenek.github.io/simplechat/, function() {
     console.log("Launching server...");
 });
